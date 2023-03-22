@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3307/test_api
+    username: root
+    password: secret
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create-drop
+
+server:
+  error:
+    include-message: always
+    include-binding-errors: always
+    include-exception: false
+    include-stacktrace: never
+
+jwt:
+  secret: g6g4PbYxKe2lYyWLiVaLepBB3EeayThAcQjmAIvUZeLOKz0oH5fjFFmbrutpAQaVngLbWuUp513/myCiDPuc/PFzVUpIxmsWSDvJPbVPGU0ynr0vdIPgZtRmZNjxtwJzZypQ6FM/driILqj/CtH0yKiM5JIU6mSe8Nh8AoeUJEl+Nbvv8MJJRs3ZeKhgk/xFFq4TAx9ufYxCvMCxC6E
+
+
+
+
+
+

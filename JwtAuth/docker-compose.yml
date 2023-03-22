@@ -1,0 +1,18 @@
+version: "3.7"
+
+services:
+  mysqldb:
+    image: mysql:8.0.29
+    command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    container_name: 'library_db_api'
+    ports:
+      - "3307:3306"
+      - "33070:33060"
+    environment:
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_DATABASE: test_api
+    volumes:
+      - my-datavolume:/var/lib/mysql
+
+volumes:
+  my-datavolume:
